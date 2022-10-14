@@ -8,7 +8,11 @@ public class App {
         return "Hello World!";
     }
 
-    public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+    public static void main(String[] args) throws InterruptedException {
+        Dummy dummy=new Dummy();
+        dummy.doImportantStuff1();
+        dummy.doImportantStuff2();
+        dummy.doImportantStuff3();
+        System.out.println("The end");
     }
 }
