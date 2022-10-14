@@ -7,9 +7,9 @@ public class AppWithThreads {
         ImportantStuff2 importantStuff2=new ImportantStuff2();
         ImportantStuff3 importantStuff3=new ImportantStuff3();
 
-        var thread1=new Thread(importantStuff1);
-        var thread2=new Thread(importantStuff2);
-        var thread3=new Thread(importantStuff3);
+        var thread1=new Thread(importantStuff1::doStuff);
+        var thread2=new Thread(importantStuff2::doStuff);
+        var thread3=new Thread(importantStuff3::doStuff);
 
         thread1.start();
         thread2.start();

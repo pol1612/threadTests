@@ -1,8 +1,7 @@
 package cat.uvic.teknos.m09.threadTests;
 
-public class ImportantStuff3 implements Runnable{
-    @Override
-    public void run() {
+public class ImportantStuff3 {
+    public void doStuff() {
         try {
             Thread.sleep(2*1000);
         } catch (InterruptedException e) {
